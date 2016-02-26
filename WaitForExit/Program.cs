@@ -15,14 +15,12 @@ namespace WaitForExit
         {
             var exitEvent = new ManualResetEventSlim();
 
-            Func<int, bool> handler = ctrlType =>
+            SetConsoleCtrlHandler(ctrlType =>
             {
                 if (ctrlType != 0 /* CTRL+C */) return false;
                 exitEvent.Set();
                 return true;
-            };
-
-            SetConsoleCtrlHandler(new HandlerRoutine(handler), true);
+            }, true);
 
             Console.WriteLine("Press CTRL+C to exit...");
             exitEvent.Wait();
