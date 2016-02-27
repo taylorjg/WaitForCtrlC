@@ -7,8 +7,8 @@
     <ProjectGuid>{9201917E-92C6-44E7-80B9-2ACE46FA6A04}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>WaitForExit</RootNamespace>
-    <AssemblyName>WaitForExit</AssemblyName>
+    <RootNamespace>WaitForCtrlC</RootNamespace>
+    <AssemblyName>WaitForCtrlC</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CtrlC.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
