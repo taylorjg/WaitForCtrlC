@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace WaitForExit
+namespace WaitForCtrlC
 {
     internal static class Program
     {

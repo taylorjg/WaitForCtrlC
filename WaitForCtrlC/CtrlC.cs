@@ -1,7 +1,7 @@
 ﻿using System.Runtime.InteropServices;
 using System.Threading;
 
-namespace WaitForExit
+namespace WaitForCtrlC
 {
     internal static class CtrlC
     {
